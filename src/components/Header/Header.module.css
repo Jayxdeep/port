@@ -1,0 +1,67 @@
+/* src/components/Header/Header.module.css */
+.headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Keeps text and image centered vertically relative to each other */
+  gap: 2rem;
+  margin-bottom: 3.5rem;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* This container holds the name, role, and bio */
+.textContainer {
+  flex: 1; /* Takes up remaining space */
+  min-width: 0; /* Prevents flex items from overflowing */
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+  letter-spacing: -0.02em;
+}
+
+.role {
+  font-size: 1rem;
+  color: var(--text-primary);
+  opacity: 0.9;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.bio {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* The new image styling */
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--accent);
+  
+  /* REMOVED: filter: grayscale(100%); */
+  /* REMOVED: transition: filter 0.3s ease; */
+}
+/* Optional: Add color on hover */
+.avatar:hover {
+    filter: grayscale(0%);
+}
+
+/* Responsive: On mobile, stack them vertically */
+@media (max-width: 640px) {
+  .headerWrapper {
+    flex-direction: column-reverse; /* Put image on top on mobile */
+    text-align: center;
+    gap: 1.5rem;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,34 @@
+.footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns content to the left like reference */
+  gap: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem; /* Space between icons */
+  align-items: center;
+}
+
+.iconLink {
+  color: var(--text-secondary); /* Grey by default */
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconLink:hover {
+  color: var(--text-primary); /* White/Bright on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.copy {
+  font-size: 0.8rem;
+  opacity: 0.5;
+}
