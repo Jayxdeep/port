@@ -1,7 +1,7 @@
 export const portfolioData = {
   name: "Jaydeep Mukherjee",
   role: "ECE Student & Developer",
-  avatar: "/avatar.jpg",
+  avatar: "https://res.cloudinary.com/dhymd43sx/image/upload/v1765324599/avatar_mjq0n2.jpg",
   bio: "I build systems, tools, and projects that help me understand how things work.",
   socials: {
     github: "https://github.com/Jayxdeep",

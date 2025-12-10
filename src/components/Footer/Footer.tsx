@@ -35,8 +35,6 @@ export const Footer = ({ socials }: FooterProps) => {
         >
           <Linkedin size={20} />
         </a>
-
-        {/* Twitter Icon (Optional - only shows if you have a link) */}
         {socials.twitter && (
           <a 
             href={socials.twitter} 

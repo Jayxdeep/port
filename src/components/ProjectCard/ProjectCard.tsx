@@ -1,5 +1,4 @@
 import styles from './ProjectCard.module.css';
-
 interface ProjectProps {
   title: string;
   description: string;
@@ -13,7 +12,6 @@ export const ProjectCard = ({ title, description, tech, link }: ProjectProps) =>
       <div className={styles.card}>
         <div className={styles.header}>
           <span className={styles.title}>{title}</span>
-          {/* Optional: Add an arrow icon here if you want */}
         </div>
         <p className={styles.description}>{description}</p>
         <div className={styles.techStack}>

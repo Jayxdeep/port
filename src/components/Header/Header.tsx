@@ -1,6 +1,4 @@
-// src/components/Header/Header.tsx
 import styles from './Header.module.css';
-
 interface HeaderProps {
   name: string;
   role: string;
@@ -11,14 +9,11 @@ interface HeaderProps {
 export const Header = ({ name, role, bio, avatar }: HeaderProps) => {
   return (
     <header className={styles.headerWrapper}>
-      {/* Left Column: Text */}
       <div className={styles.textContainer}>
         <h1 className={styles.name}>{name}</h1>
         <div className={styles.role}>{role}</div>
         <p className={styles.bio}>{bio}</p>
       </div>
-
-      {/* Right Column: Image */}
       <img 
         src={avatar} 
         alt={`${name} avatar`} 
