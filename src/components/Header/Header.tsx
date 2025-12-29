@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react'; // Import icon
+import { ArrowUpRight } from 'lucide-react'; 
 import styles from './Header.module.css';
 
 interface HeaderProps {
@@ -6,7 +6,7 @@ interface HeaderProps {
   role: string;
   bio: string;
   avatar: string;
-  resume: string; // Add type
+  resume: string; 
 }
 
 export const Header = ({ name, role, bio, avatar, resume }: HeaderProps) => {
