@@ -1,6 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'; 
 import styles from './Header.module.css';
-
 interface HeaderProps {
   name: string;
   role: string;
