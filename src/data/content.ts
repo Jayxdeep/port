@@ -3,8 +3,8 @@ export const portfolioData = {
   githubUsername: "Jayxdeep",
   role: "ECE Student & Developer",
   avatar: "https://res.cloudinary.com/dhymd43sx/image/upload/v1765324599/avatar_mjq0n2.jpg",
-  resume: "/port/resume.pdf",
-  bio: "I build systems to understand how things work. I come from ECE but create in software—from hardware signals to APIs. I like clear architectures and code that’s easy to read and extend.",
+  resume: "/resume.pdf",
+  bio: "I build systems to understand how things work. I come from ECE but create in software from hardware signals to APIs. I like clear architectures and code that is easy to read and extend.",
   socials: {
     github: "https://github.com/Jayxdeep",
     linkedin: "https://linkedin.com/in/jaydeep-mukherjee",

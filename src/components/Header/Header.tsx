@@ -16,8 +16,6 @@ export const Header = ({ name, role, bio, avatar, resume }: HeaderProps) => {
         <h1 className={styles.name}>{name}</h1>
         <div className={styles.role}>{role}</div>
         <p className={styles.bio}>{bio}</p>
-
-        {/* RESUME LINK ADDED HERE */}
         <a 
           href={resume} 
           target="_blank" 
@@ -26,9 +24,7 @@ export const Header = ({ name, role, bio, avatar, resume }: HeaderProps) => {
         >
           View Resume <ArrowUpRight size={18} />
         </a>
-
       </div>
-
       <img 
         src={avatar} 
         alt={`${name} avatar`} 
